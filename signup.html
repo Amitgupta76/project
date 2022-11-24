@@ -28,10 +28,10 @@
     <hr class="space">
     <h3>Sign up here and Enjoy delicious food at the safety of your home.</h3>
     <hr class="space">
-    <form action="password.html" class="row needs-validation" novalidate>
+    <form action="/signup" class="row needs-validation" method="post" novalidate>
       <div class="col-12">
         <label class="form-label">First name</label>
-        <input type="text" maxlength="10" minlength="3" class="form-control" placeholder="First-name" aria-label="First-name" required />
+        <input type="text" name="fname" maxlength="10" minlength="3" class="form-control" placeholder="First-name" aria-label="First-name" required />
         <div class="invalid-feedback">
           First-name must at least contain 3 letters!
         </div>
@@ -39,7 +39,7 @@
       <hr class="space">
       <div class="col-12">
         <label class="form-label">Last name</label>
-        <input type="text" class="form-control" placeholder="Last-name" aria-label="Last-name">
+        <input type="text" name="lname" class="form-control" placeholder="Last-name" aria-label="Last-name">
         <div class="invalid-feedback">
           Please fill this field!
         </div>
@@ -47,14 +47,15 @@
       <hr class="space">
       <div class="col-12">
         <label for="EmailAddressInput" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="EmailAddressInput" placeholder="name@example.com" required />
+        <input type="email" name="email" class="form-control exists" id="EmailAddressInput" placeholder="name@example.com" required />
         <div class="invalid-feedback">
+          <h1 class="exists1"></h1>
           Please enter a valid email id!
         </div>
       </div>
       <hr class="space">
       <div class="col-12">
-        <button class="btn btn-danger" type="submit">SUBMIT</button>
+        <button class="btn btn-danger" name="signup" type="submit">SUBMIT</button>
         <hr class="space">
       </div>
     </form>
@@ -80,6 +81,8 @@
   <div class="bottom-contact">
     <p class="copyright">© 2021 project-swato.</p>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>

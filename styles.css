@@ -33,6 +33,15 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+.sync {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  text-align: center;
+  width: 100%;
+  border-style: none;
+}
+
 .top-container {
   background-color: #EC255A;
   position: relative;
@@ -221,4 +230,15 @@ a:hover {
 
 .coupon {
   background-color: #D77FA1;
+}
+
+.wrapper span{
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrapper span.num{
+  font-size: 17px;
+  pointer-events: none;
 }

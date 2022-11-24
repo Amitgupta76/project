@@ -29,10 +29,10 @@
       width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </p>
     <br>
-    <form class="row needs-validation" novalidate>
+    <form action="/contact" method="post" class="row needs-validation" novalidate>
       <div class="col-12">
         <label class="form-label">First name</label>
-        <input type="text" maxlength="10" minlength="3" class="form-control" placeholder="First-name" aria-label="First-name" required />
+        <input name="fname1" type="text" maxlength="10" minlength="3" class="form-control" placeholder="First-name" aria-label="First-name" required />
         <div class="invalid-feedback">
           First-name must at least contain 3 letters!
         </div>
@@ -40,7 +40,7 @@
       <hr class="space">
       <div class="col-12">
         <label class="form-label">Last name</label>
-        <input type="text" class="form-control" placeholder="Last-name" aria-label="Last-name">
+        <input name="lname1" type="text" class="form-control" placeholder="Last-name" aria-label="Last-name">
         <div class="invalid-feedback">
           Please fill this field!
         </div>
@@ -48,7 +48,7 @@
       <hr class="space">
       <div class="col-12">
         <label for="EmailAddressInput" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="EmailAddressInput" placeholder="name@example.com" required />
+        <input name="email1" type="email" class="form-control" id="EmailAddressInput" placeholder="name@example.com" required />
         <div class="invalid-feedback">
           Please enter a valid email id!
         </div>
@@ -56,14 +56,14 @@
       <hr class="space">
       <div class="col-12">
         <label class="form-label">Type text</label>
-        <input type="text" minlength="3" class="form-control" placeholder="Type-text" required />
+        <textarea rows="8" cols="80" name="text" type="text" minlength="3" maxlength="200" class="form-control" placeholder="Type-text" required /></textarea>
         <div class="invalid-feedback">
           Message must contain at least 3 characters!
         </div>
       </div>
       <hr class="space">
       <div class="col-12">
-        <button class="btn btn-danger" type="submit">SUBMIT</button>
+        <button name="contact" class="btn btn-danger" type="submit">SUBMIT</button>
         <hr class="space">
       </div>
     </form>
